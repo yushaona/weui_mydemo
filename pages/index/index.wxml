@@ -1,35 +1,33 @@
-<!--index.wxml 首页诊所-->
-<view class="container">
-  <view class='coverView {{ispopup==1?"container":""}}'></view>   
-
-  
-  <view class='titleIndex' > 
-      <!-- 下拉列表动画 -->
-      <view animation="{{animationAlert}}" class="animationAlert">
-        <view bindtap='' data-name="{{item.clinicname}}" data-dentalid="{{item.dentalid}}"  wx:for="{{cliniclist}}" wx:key="*this" class='listItem {{dentalid==item.dentalid?"bd_lt_s":"bd_lt_n"}}'>
-          <view class='listview_1'>{{item.clinicname}}</view>
-          <view class='listview_2'>管家号:{{item.dentalid}}</view>
-        </view>
-      </view>  
-     
-    
-      <cover-view class='clinichead'>
-        <!--前面 图标 诊所名 箭头  -->
-        <cover-view class='headFlex' >
-          <cover-image class='clinicimages' src="{{clinicpic}}"></cover-image>
-          <cover-view bindtap='cliniclisttap' class='clinicfont'>
-            <cover-view>{{clinicname}}</cover-view>
-            <cover-image class='arrowimage' src="{{arrowpic}}"></cover-image>
-          </cover-view>
-        </cover-view>
-        <!--后面 加号  -->
-        <cover-view><cover-image class='addimage' src="{{addpic}}"></cover-image></cover-view>
+<cover-view bindtap='hideModel' class='coverView {{ispopup==1?"container":""}}'></cover-view> 
+<!-- 头部栏 固定高度和位置  -->
+<view class='titleIndex'>
+  <!-- 下拉列表动画 -->
+    <cover-view animation="{{animationAlert}}" class="animationAlert">
+      <cover-view bindtap='' data-name="{{item.clinicname}}" data-dentalid="{{item.dentalid}}"  wx:for="{{cliniclist}}" wx:key="*this" class='listItem {{dentalid==item.dentalid?"bd_lt_s":"bd_lt_n"}}'>
+        <cover-view class='listview_1'>{{item.clinicname}}</cover-view>
+        <cover-view class='listview_2'>管家号:{{item.dentalid}}</cover-view>
       </cover-view>
-      
-  </view>
-  
+    </cover-view>  
+
+    <!-- 诊所名称  -->
+    <cover-view class='clinichead'>
+      <!--前面 图标 诊所名 箭头  -->
+      <cover-view class='headFlex' >
+        <cover-image class='clinicimages' src="{{clinicpic}}"></cover-image>
+        <cover-view bindtap='showModal' class='clinicfont'>
+          <cover-view>{{clinicname}}</cover-view>
+          <cover-image class='arrowimage' src="{{arrowpic}}"></cover-image>
+        </cover-view>
+      </cover-view>
+      <!--后面 加号  -->
+      <cover-view><cover-image class='addimage' src="{{addpic}}"></cover-image></cover-view>
+    </cover-view>
+</view>
+
+<!-- 除去头部栏--下半部分固定位置fixed,如果为relative滚动的时候，将会联动头部滚动，不能达到预期【头部不动】的效果-->
+<view class="container">
   <!--上部  -->
-  <view  class='headView'>
+  <view  class=''>
     <!-- swiper 轮播图  -->
     <view class='clinicswiper'>
       <!-- <view><canvas class='indexBg' canvas-id="mycanvas"><canvas class='indexBg' canvas-id='ballid'></canvas></canvas></view> -->
@@ -53,7 +51,7 @@
             </block> 
         </swiper>  
       </view>
-     
+    
     </view>
     <!--工作报告  -->
     <view class='today'>
@@ -71,7 +69,7 @@
   <view class='controlview'>
     <!--我的工作台  -->
     <view class='ctlItem_1 font11_5'>
-      <image style='width:12px;height:12px; background-color: red;' mode='aspectFit' src="{{controlpic}}"></image>
+      <image class='controlimg' mode='aspectFit' src="{{controlpic}}"></image>
       <view class='mycontrol'>我的工作台</view>
     </view>
     <!--标签图标  -->
@@ -88,6 +86,5 @@
       </view>
     </block>
   </view>
-
-
 </view>
+

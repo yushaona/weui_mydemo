@@ -2,15 +2,17 @@
   height: 100%;
   width: 100%;
   background-color: #ffffff;
-  position: relative;
+  position: fixed;
   z-index: 0;
+  overflow-y: scroll;
+
 } 
 
 .coverView{
   z-index: 2;
   background-color: gray;
   position: fixed;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 /*
 下拉列表动画
@@ -55,14 +57,13 @@
 }
 
 .titleIndex{
-  position: fixed;
-  top:0;
-  left: 0;
-  z-index: 3;
+  position: relative;
+  height: 44px;
+  width:100%;
 }
 
 .clinichead{
-  position: fixed;
+  position: relative;
   height: 44px;
   width: 100%;
   padding: 8.5px 10px 7.5px 10px;
@@ -243,6 +244,7 @@
   flex-flow:wrap;
   align-items: center;
   padding-top: 21px;
+  padding-bottom: 45px;
 }
 .mainitem{
   width: 25%;

@@ -98,7 +98,6 @@ Page({
         "keyname": "审批",
         "icon": "../../images/mainicon/check.png",
       },
-     
     ],
     //诊所列表
     cliniclist:[{
@@ -272,7 +271,12 @@ Page({
     );
   },
   
-  cliniclisttap:function(){
+  //点击弹框背景
+  hideModel: function () {
+    this.showModal()
+  },
+
+  showModal:function(){
     var animation = wx.createAnimation({
       duration: 500,
       timingFunction: "ease",
@@ -293,6 +297,8 @@ Page({
       ispopup: isShow,
     })
   },
+
+
 
   //页面首次加载完成触发
   onReady:function(){
