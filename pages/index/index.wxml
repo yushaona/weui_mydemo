@@ -1,0 +1,93 @@
+<!--index.wxml 首页诊所-->
+<view class="container">
+  <view class='coverView {{ispopup==1?"container":""}}'></view>   
+
+  
+  <view class='titleIndex' > 
+      <!-- 下拉列表动画 -->
+      <view animation="{{animationAlert}}" class="animationAlert">
+        <view bindtap='' data-name="{{item.clinicname}}" data-dentalid="{{item.dentalid}}"  wx:for="{{cliniclist}}" wx:key="*this" class='listItem {{dentalid==item.dentalid?"bd_lt_s":"bd_lt_n"}}'>
+          <view class='listview_1'>{{item.clinicname}}</view>
+          <view class='listview_2'>管家号:{{item.dentalid}}</view>
+        </view>
+      </view>  
+     
+    
+      <cover-view class='clinichead'>
+        <!--前面 图标 诊所名 箭头  -->
+        <cover-view class='headFlex' >
+          <cover-image class='clinicimages' src="{{clinicpic}}"></cover-image>
+          <cover-view bindtap='cliniclisttap' class='clinicfont'>
+            <cover-view>{{clinicname}}</cover-view>
+            <cover-image class='arrowimage' src="{{arrowpic}}"></cover-image>
+          </cover-view>
+        </cover-view>
+        <!--后面 加号  -->
+        <cover-view><cover-image class='addimage' src="{{addpic}}"></cover-image></cover-view>
+      </cover-view>
+      
+  </view>
+  
+  <!--上部  -->
+  <view  class='headView'>
+    <!-- swiper 轮播图  -->
+    <view class='clinicswiper'>
+      <!-- <view><canvas class='indexBg' canvas-id="mycanvas"><canvas class='indexBg' canvas-id='ballid'></canvas></canvas></view> -->
+      <view class='swiperview'>
+        <swiper indicator-dots='true' indicator-color='rgba(255,255,255,0.6)' indicator-active-color='#ffffff' current='0' duration='500'> 
+            <block wx:for="{{swiperArray}}" wx:key="*this" >
+              <swiper-item >
+                  <view> 
+                      <view class='businessTip'>
+                        <view >{{item.keyname}}</view>
+                        <view class='mgt10'>{{item.money}}</view>
+                    </view> 
+                    <view>
+                      <view class='detailtip'>
+                        <view class='textmg'>业绩明细</view>
+                        <image class='enterimage' src="{{enterpic}}"></image>
+                      </view>
+                    </view>
+                  </view>                    
+              </swiper-item>
+            </block> 
+        </swiper>  
+      </view>
+     
+    </view>
+    <!--工作报告  -->
+    <view class='today'>
+      <block wx:for="{{todaywork}}" wx:key="*this" >
+        <view class='todayitem'>
+          <view class='font14 greencolor'>{{item.num}}</view>
+          <view class='font10 graycolor'>{{item.keyname}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!--灰色分割层  -->
+  <view class='cutview'></view>
+  <!--工作台  -->
+  <view class='controlview'>
+    <!--我的工作台  -->
+    <view class='ctlItem_1 font11_5'>
+      <image style='width:12px;height:12px; background-color: red;' mode='aspectFit' src="{{controlpic}}"></image>
+      <view class='mycontrol'>我的工作台</view>
+    </view>
+    <!--标签图标  -->
+    <view class='ctlItem_2'>
+      <image class='settingimg' src="{{settingpic}}"></image>
+    </view>
+  </view> 
+  <!-- 主图标  -->
+  <view class='mainview font11'>
+    <block wx:for="{{mainicon}}" wx:key="*this">
+      <view class='mainitem'>
+        <image class='mainicon' src="{{item.icon}}"></image>
+        <view class='maintext'>{{item.keyname}}</view>
+      </view>
+    </block>
+  </view>
+
+
+</view>

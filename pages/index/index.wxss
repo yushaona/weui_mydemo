@@ -1,0 +1,261 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 0;
+} 
+
+.coverView{
+  z-index: 2;
+  background-color: gray;
+  position: fixed;
+  opacity: 0.6;
+}
+/*
+下拉列表动画
+*/
+.animationAlert {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll; 
+  overflow-x:hidden;
+  position: fixed;
+  z-index: 3;
+  top:-256px;
+  background: white;
+  font-family: SourceHanSansCN-Light;
+  box-sizing: border-box;
+}
+
+.listItem{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(240,240,240);
+}
+.bd_lt_s{
+  border-left: 5px solid rgb(27,210,173);
+}
+.bd_lt_n{
+  border-left: 5px solid rgb(255,255,255);
+}
+
+.listview_1{
+  font-size: 12px;
+  margin-left: 10px;
+}
+.listview_2{
+  font-size: 10px;
+  color: rgb(145,155,154);
+  margin-right: 15px;
+}
+
+.titleIndex{
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 3;
+}
+
+.clinichead{
+  position: fixed;
+  height: 44px;
+  width: 100%;
+  padding: 8.5px 10px 7.5px 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  color: #1bccb1;
+  background-color: #ffffff;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 4;
+}
+
+.headFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+.clinicimages{
+  height: 28px;
+  width: 28px;
+}
+
+.clinicfont{
+  font-family: SourceHanSansCN-Light;
+  font-size: 14px;
+  color: #333333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 7.5px;
+}
+
+.arrowimage{
+  width: 9.5px;
+  height: 4.5px;
+  margin-left: 8.5px;
+}
+.addimage{
+  height: 15px;
+  width: 15px;
+}
+
+.clinicswiper{
+  height: 140px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.swiperview{
+  margin: 0;
+  z-index: 1;
+  width: 100%;
+  height: 140px;
+  background-color: rgb(27,196,182);
+}
+.indexBg{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.headView{
+   margin-top: 44px; 
+}
+.swipteritem{
+  background-color: #18d2ad;
+  width: 100%;
+  height: 100%;
+}
+/*水平布局  */
+.hview{
+  display: flex;
+  flex-direction: row;
+}
+
+.businessTip{
+  color: #ffffff;
+  font-size: 12px;
+  font-family: SourceHanSansCN-Light;
+  margin-left: 10.5px;
+  margin-top: 14.5px;
+}
+
+
+.detailtip{
+  position: fixed;
+  font-family: SourceHanSansCN-Light;
+  font-size: 12px;
+  right: 10.5px;
+  top: 14.5px;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+.textmg{
+  margin-right: 5px;
+}
+.enterimage{
+  width: 5.5px;
+  height: 9.5px;
+  margin-top: 3.5px;
+  margin-bottom: 0.5px;
+}
+/*今日工作布局  */
+.today{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  height: 58px; 
+  z-index: 1;
+}
+.todayitem{
+  width: 100%;
+  height: 28px;
+  font-family: SourceHanSansCN-Light;
+  text-align: center;
+  border-right: 1px solid rgb(240,240,240);
+}
+.todayitem:last-child{
+  border-right: none;
+}
+
+.cutview{
+  width: 100%;
+  height: 10.5px;
+  background-color: rgb(240, 240, 240);
+}
+
+.controlview{
+  width: 100%;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom: 1px solid  rgb(145,155,154);
+}
+.ctlItem_1{
+  box-sizing: border-box;
+  padding-left: 10.5px;
+  color: rgb(164,176,175);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-content: center;
+}
+.ctlItem_2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 7px;
+}
+.settingimg{
+  width: 20px;
+  height: 22px;
+}
+.controlimg{
+  width: 12px;
+  height: 12px;
+}
+.mycontrol{
+  margin-left: 10px;
+}
+
+.mainview{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow:wrap;
+  align-items: center;
+  padding-top: 21px;
+}
+.mainitem{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 27px;
+}
+.maintext{
+  margin-top: 10px;
+}
+.mainicon{
+  height: 45px;
+  width: 45px;
+}

@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":
+  {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1bccb1",
+    "navigationBarTitleText": "MyDemo",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#00f",
+    "enablePullDownRefresh":false
+  },
+  "tabBar":{
+    "color": "#cccccc",
+    "selectedColor":"#1bccb1",
+    "position":"bottom",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "诊所",
+        "iconPath":"images/tabicon/btn_诊所默认.png",
+        "selectedIconPath":"images/tabicon/btn_诊所当前.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "消息",
+        "iconPath": "images/tabicon/btn_消息默认.png",
+        "selectedIconPath": "images/tabicon/btn_消息当前.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "微课堂",
+        "iconPath": "images/tabicon/btn_商学院默认.png",
+        "selectedIconPath": "images/tabicon/btn_商学院当前.png"
+      },
+      {
+        "pagePath":"pages/index/index",
+        "text":"我的",
+        "iconPath": "images/tabicon/btn_我的默认.png",
+        "selectedIconPath": "images/tabicon/btn_我的当前.png"
+      },
+      {
+        "pagePath":"pages/logs/logs",
+        "text":"日志"
+      }
+    ]
+  },
+  "networkTimeout":{
+    "request":10000,
+    "downloadFile":10000
+  },
+  "debug":false
+}
