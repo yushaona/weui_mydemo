@@ -1,0 +1,15 @@
+<!--今日工作列表  -->
+<view class='pages'>
+  <block wx:for="{{datalist}}" wx:key="*this">
+    <view class='viewItem fontfamily font14'>
+      <view class='viewHead'>
+        <image mode='aspectFit' class='itemImage' src="{{item.icon}}"></image>
+        <view class='nameGraphic'>{{item.name}}</view>
+      </view>
+      <view class='viewHead font11 '>
+        <view class='numGraphic' >{{item.num}}人</view>
+        <image class='enterimage' src="{{enterpic}}"></image>
+      </view>
+    </view>
+  </block>
+</view>

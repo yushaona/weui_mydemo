@@ -1,7 +1,10 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/marketing/marketing",
+    "pages/today/today"
+    
   ],
   "window":
   {
@@ -9,14 +12,18 @@
     "navigationBarBackgroundColor": "#1bccb1",
     "navigationBarTitleText": "MyDemo",
     "navigationBarTextStyle":"white",
-    "backgroundColor":"#00f",
-    "enablePullDownRefresh":false
+    "backgroundColor":"#f0f0f0",
+    "backgroundColorTop":"#f0f0f0",
+    "backgroundColorBottom":"#f0f0f0",
+    "enablePullDownRefresh":false,
+    "onReachBottomDistance": 50
   },
   "tabBar":{
     "color": "#cccccc",
     "selectedColor":"#1bccb1",
     "position":"bottom",
     "list":[
+      
       {
         "pagePath": "pages/index/index",
         "text": "诊所",
@@ -42,8 +49,8 @@
         "selectedIconPath": "images/tabicon/btn_我的当前.png"
       },
       {
-        "pagePath":"pages/logs/logs",
-        "text":"日志"
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
       }
     ]
   },

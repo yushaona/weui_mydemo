@@ -1,0 +1,9 @@
+<view class='viewMenu'>
+  <block wx:for="{{datalist}}">
+  <view class='itemView'>
+    <image class='imageItem' src='{{item.icon}}'></image>
+    <view class='fontItem'>{{item.keyname}}</view>
+  </view>
+</block>
+</view> 
+

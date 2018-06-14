@@ -1,4 +1,5 @@
 //app.js
+//函数用来注册一个小程序。接受一个 object 参数，其指定小程序的生命周期函数等
 App({
   onShow:function(e){
     console.log(e);
@@ -6,8 +7,13 @@ App({
   onHide:function(){
     console.log("-------------Hide");
   },
+  onError:function(){
 
-  onLaunch: function () {
+  },
+  onPageNotFound:function(){
+
+  },
+  onLaunch: function (options) {
     var _that = this;
     wx.getSystemInfo({
       success: function (res) {

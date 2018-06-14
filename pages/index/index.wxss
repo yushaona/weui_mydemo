@@ -38,6 +38,7 @@
   justify-content:space-between;
   align-items: center;
   border-bottom: 1px solid rgb(240,240,240);
+  color: red;
 }
 .bd_lt_s{
   border-left: 5px solid rgb(27,210,173);

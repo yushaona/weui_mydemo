@@ -1,3 +1,5 @@
 {
-  "navigationBarTitleText": "诊所"
+  "navigationBarTitleText": "诊所",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":100
 }

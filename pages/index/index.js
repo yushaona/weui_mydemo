@@ -10,7 +10,8 @@ Page({
     dentalid:"48888",
     clinicid:"1111111",
     ispopup:0, //弹出状态
-    arrowpic:"../../images/down_arrow_default.png",
+    arrowpic_def:"../../images/down_arrow_default.png",
+    arrowpic: "../../images/down_arrow.png",
     addpic:"../../images/home_add_default.png",
     enterpic:"../../images/enter_arrow_default.png",
     controlpic:"../../images/package.png",
@@ -101,141 +102,111 @@ Page({
     ],
     //诊所列表
     cliniclist:[{
-      "clinicname":"太和诊所",
+      "clinicname":"太和诊所1",
       "clinicid":"1",
-      "dentalid":"8888",
+      "dentalid":"88881",
       "issel":0,
     },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所2",
+        "clinicid": "2",
+        "dentalid": "88882",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
+        "clinicname": "太和诊所3",
+        "clinicid": "3",
         "dentalid": "48888",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所4",
+        "clinicid": "4",
+        "dentalid": "88883",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所5",
+        "clinicid": "5",
+        "dentalid": "88884",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所6",
+        "clinicid": "6",
+        "dentalid": "88885",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所7",
+        "clinicid": "7",
+        "dentalid": "88868",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所8",
+        "clinicid": "8",
+        "dentalid": "888668",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所9",
+        "clinicid": "9",
+        "dentalid": "88288",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所10",
+        "clinicid": "10",
+        "dentalid": "88188",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所11",
+        "clinicid": "11",
+        "dentalid": "88288",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所12",
+        "clinicid": "12",
+        "dentalid": "83888",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所13",
+        "clinicid": "13",
+        "dentalid": "84888",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所14",
+        "clinicid": "14",
+        "dentalid": "85888",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所15",
+        "clinicid": "15",
+        "dentalid": "88788",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所16",
+        "clinicid": "16",
+        "dentalid": "87888",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所17",
+        "clinicid": "17",
+        "dentalid": "88887",
         "issel": 0,
       },
       {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
-        "issel": 0,
-      },
-      {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
-        "issel": 0,
-      },
-      {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
-        "issel": 0,
-      },
-      {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
-        "issel": 0,
-      },
-      {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
-        "issel": 0,
-      },
-      {
-        "clinicname": "太和诊所",
-        "clinicid": "1",
-        "dentalid": "8888",
+        "clinicname": "太和诊所18",
+        "clinicid": "18",
+        "dentalid": "78888",
         "issel": 0,
       },
       ],
@@ -254,13 +225,68 @@ Page({
   // onPageScroll:function(e){
   //   console.log(e);
   // },
-  // onPullDownRefresh:function(){
-  //   console.log("下拉刷新");
-  //   this.setData({
-  //     motto: "下拉刷新"
-  //   });
-  //   wx.stopPullDownRefresh();
-  // },
+  //点击【主图标】
+  tapmenu:function(e){
+    console.log(e);
+    var name = e.currentTarget.dataset.name;
+    switch(name)
+    {
+      case "营销":
+      {
+        wx.navigateTo({
+          url: '../marketing/marketing',
+        })
+        break;
+      }
+    }
+  },
+  //点击-【今日工作】 【明日预约】 【历史欠款】跳转不同的页面
+  taptask:function(e){
+    console.log(e);
+    var id = e.currentTarget.dataset.id;
+    switch(id)
+    {
+      case 0:
+        {
+          console.log("今日工作");
+          wx.navigateTo({
+            url: '../today/today',
+          })
+          wx.na
+          break;
+        }
+      case 1:
+        {
+          console.log("明日预约");
+          break;
+        }
+      case 2:
+        {
+          console.log("历史欠款");
+          break;
+        }
+    }
+  },
+  onReachBottom:function(){
+    wx.showToast({
+      title: '上拉刷新',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+
+  onPullDownRefresh:function(){
+    console.log("下拉刷新");
+    if (this.data.ispopup == 1){
+      this.showModal();
+    }
+    wx.showToast({
+      title: '下拉刷新',
+      icon: 'success',
+      duration: 2000
+    })
+    wx.stopPullDownRefresh();
+  },
   //切换TAB触发
   onTabItemTap:function(item){
     console.log(item);
@@ -270,7 +296,23 @@ Page({
       }
     );
   },
-  
+  //选择诊所
+  selClinic:function(e){
+    console.log(e);
+    // clinicname: "深圳拜博口腔",
+    //   dentalid:"48888",
+    //     clinicid:"1111111",
+    //选择同一个诊所
+    if (this.data.clinicid != e.currentTarget.id){
+      this.setData({
+        "clinicid": e.currentTarget.id,
+        "dentalid":e.currentTarget.dataset.dentalid,
+        "clinicname": e.currentTarget.dataset.name
+      })
+    }
+
+    this.showModal();
+  },
   //点击弹框背景
   hideModel: function () {
     this.showModal()

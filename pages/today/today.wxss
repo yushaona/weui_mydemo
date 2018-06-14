@@ -1,0 +1,48 @@
+/* pages/today/today.wxss */
+
+.pages{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  background-color: #f0f0f0;
+}
+
+.viewItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  height: 50px;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  margin-bottom: 1px;
+  color: rgb(51,51,51);
+  padding-left: 14px;
+  padding-right: 10px;
+}
+.viewHead{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+}
+
+.nameGraphic{
+  margin-left: 11px;
+}
+
+.numGraphic{
+  color: rgb(136,136,136);
+  margin-right: 8.5px;
+}
+.itemImage{
+  width:28px;
+  height: 26px;
+}
+
+.enterimage{
+  width: 5.5px;
+  height: 9.5px;
+}

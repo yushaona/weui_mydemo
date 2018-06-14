@@ -3,7 +3,7 @@
 <view class='titleIndex'>
   <!-- 下拉列表动画 -->
     <cover-view animation="{{animationAlert}}" class="animationAlert">
-      <cover-view bindtap='' data-name="{{item.clinicname}}" data-dentalid="{{item.dentalid}}"  wx:for="{{cliniclist}}" wx:key="*this" class='listItem {{dentalid==item.dentalid?"bd_lt_s":"bd_lt_n"}}'>
+      <cover-view bindtap='selClinic' id="{{item.clinicid}}" data-name="{{item.clinicname}}" data-dentalid="{{item.dentalid}}"  wx:for="{{cliniclist}}" wx:key="*this" class='listItem {{dentalid==item.dentalid?"bd_lt_s":"bd_lt_n"}}'>
         <cover-view class='listview_1'>{{item.clinicname}}</cover-view>
         <cover-view class='listview_2'>管家号:{{item.dentalid}}</cover-view>
       </cover-view>
@@ -15,8 +15,8 @@
       <cover-view class='headFlex' >
         <cover-image class='clinicimages' src="{{clinicpic}}"></cover-image>
         <cover-view bindtap='showModal' class='clinicfont'>
-          <cover-view>{{clinicname}}</cover-view>
-          <cover-image class='arrowimage' src="{{arrowpic}}"></cover-image>
+          <cover-view class='greencolor'>{{clinicname}}</cover-view>
+          <cover-image class='arrowimage' src="{{ispopup==0?arrowpic_def:arrowpic}}"></cover-image>
         </cover-view>
       </cover-view>
       <!--后面 加号  -->
@@ -56,7 +56,7 @@
     <!--工作报告  -->
     <view class='today'>
       <block wx:for="{{todaywork}}" wx:key="*this" >
-        <view class='todayitem'>
+        <view data-id="{{index}}" bindtap='taptask' class='todayitem'>
           <view class='font14 greencolor'>{{item.num}}</view>
           <view class='font10 graycolor'>{{item.keyname}}</view>
         </view>
@@ -80,7 +80,7 @@
   <!-- 主图标  -->
   <view class='mainview font11'>
     <block wx:for="{{mainicon}}" wx:key="*this">
-      <view class='mainitem'>
+      <view bindtap='tapmenu' data-name="{{item.keyname}}" class='mainitem'>
         <image class='mainicon' src="{{item.icon}}"></image>
         <view class='maintext'>{{item.keyname}}</view>
       </view>
