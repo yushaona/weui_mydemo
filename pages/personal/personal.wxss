@@ -1,0 +1,115 @@
+/* pages/personal/personal.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  z-index: 0
+}
+
+.headView{
+  box-sizing: border-box;
+  padding-left: 19px;
+  padding-right: 16px;
+  width: 100%;
+  height: 82px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.middleView{
+  width: 100%;
+  height: 64px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 18.5px;
+  padding-right: 15.5px;
+}
+
+.moneyView{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+.bodyView{
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  position: fixed;
+  z-index: 0;
+  box-sizing: border-box;
+  padding-bottom: 146px;  
+}
+.info{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/*每个块  */
+.itemView{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px; 
+  padding-left: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*块中的具体一行  */
+.childView{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  height: 36px;
+  width: 100%;
+}
+
+.person{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+}
+.titleView{
+  margin-left: 7.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+.avatar{
+  border-radius:44px;
+  height: 44px;
+  width: 44px;
+}
+.imageItem{
+  height: 18px;
+  width: 18px;
+}
+
+.qrView{
+  display: flex;
+  align-items: center;
+}
+
+.qrcode{
+  margin-right: 12px;
+  height: 19px;
+  width: 20px;
+}
+.arrow{
+  width: 5px;
+  height: 8px;
+}

@@ -18,6 +18,47 @@ Page({
         "num": 9
       },
       {
+        "icon": "../../images/today/wait_triage.png",
+        "name": "待分诊",
+        "num": 9
+      },
+      {
+        "icon": "../../images/today/wait_triage.png",
+        "name": "待分诊",
+        "num": 9
+      },
+      {
+        "icon": "../../images/today/wait_triage.png",
+        "name": "待分诊",
+        "num": 9
+      },
+      {
+        "icon": "../../images/today/wait_triage.png",
+        "name": "待分诊",
+        "num": 9
+      },
+      {
+        "icon": "../../images/today/wait_triage.png",
+        "name": "待分诊",
+        "num": 9
+      },
+      {
+        "icon": "../../images/today/wait_triage.png",
+        "name": "待分诊",
+        "num": 9
+      },
+      {
+        "icon": "../../images/today/wait_triage.png",
+        "name": "待分诊",
+        "num": 9
+      },
+      {
+        "icon": "../../images/today/wait_triage.png",
+        "name": "待分诊",
+        "num": 9
+      },
+      
+      {
         "icon": "../../images/today/accept.png",
         "name": "接诊中",
         "num": 6

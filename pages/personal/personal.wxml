@@ -1,0 +1,43 @@
+<!--pages/personal/personal.wxml-->
+<!-- 头部用户的基本信息  -->
+<view class='headView bgcolor'>
+  <view class='person fontfamily whitecolor'>
+    <view><image class='avatar' mode='aspectFill' src='{{picture}}'></image></view>
+    <view class='titleView'>
+      <text class='font14'>{{name}}</text>
+      <text class='font10 mgt6'>{{duty}}</text>
+    </view>
+  </view>
+  <view class='qrView'>
+    <image class='qrcode' mode='aspectFill' src='{{qrcode}}'></image>
+    <image class='arrow' mode='aspectFill' src='{{arrowpic}}'></image>
+  </view>
+</view>
+<view class='middleView bgcolor_default fontfamily'>
+  <view class='moneyView'>
+    <text class='font11 graycolor'>总金额(元)</text>
+    <text class='font14 color51 mgt9'>{{totalfee}}</text>
+  </view>
+  <view class='moneyView'>
+    <text class='font11 graycolor'>昨日收益(元)</text>
+    <text class='font14 color51 mgt9'>{{otherfee}}</text>
+  </view>
+  <image class='arrow' mode='aspectFill' src='{{arrowpic}}'></image>
+</view>
+
+
+<!--列表信息  -->
+<view class='bodyView' >
+   <block wx:for="{{datalist}}" wx:for-item="itemName" wx:key="*this">
+    <!-- 一个功能块  -->
+    <view class='itemView bgcolor_default' >
+      <block wx:for="{{itemName}}" wx:for-item="dataItem" wx:key="*this">
+        <!-- 功能块中具体的功能  -->
+        <view class='childView'>
+          <image class='imageItem' mode='aspectFill' src='{{dataItem.icon}}'></image>
+          <view class='mgl11'>{{dataItem.keyname}}</view>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

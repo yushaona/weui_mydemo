@@ -1,15 +1,35 @@
+.mgt6{
+  margin-top: 6px;
+}
+.mgt9{
+  margin-top: 9px;
+}
 .mgt10{
   margin-top: 10px;
 }
 .mgt15{
   margin-top: 15px;
 }
-
+.mgl11{
+  margin-left: 11px;
+}
+.bgcolor{
+  background-color: rgba(27, 196, 182, 1);
+}
+.bgcolor_default{
+  background-color: rgba(255, 255, 255, 1);
+}
 .greencolor{
   color: rgba(27, 196, 182, 1);
 }
 .graycolor{
   color: rgb(145,155,154);
+}
+.color51{
+   color: rgb(51,51,51);
+}
+.whitecolor{
+  color: #ffffff;
 }
 .font11{
   font-size: 11px;
