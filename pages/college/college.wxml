@@ -21,12 +21,12 @@
   </view>
 
   <block wx:for="{{advance}}">
-    <view class='r_itemView h_itemView'>
+    <view class='r_itemView h_itemView' data-type='课程预告' data-id='{{index}}' bindtap='tapdetail'>
       <image class='collegeImg' mode='aspectFill' src='{{item.url}}'></image>
       <view class='mgl10 textView'>
         <view class='titleView'>{{item.title}}</view>
-        <view class='infoView'>{{item.remark}}</view>
-        <view class='infoView'>{{item.learn}}</view>
+        <view class='infoView_date'>{{item.remark}}</view>
+        <view class='infoView_person'>{{item.learn}}</view>
         <view class='feeView'>{{item.fee}}</view>
       </view>
     </view>
@@ -44,6 +44,21 @@
       </view>
     </view>
   </view>
+
+
+  <block wx:for="{{series}}">
+    <view class='r_itemView h_itemView' data-type='系列课' data-id='{{index}}' bindtap='tapdetail' >
+      <image class='collegeImg' mode='aspectFill' src='{{item.url}}'></image>
+      <view class='mgl10 textView'>
+        <view class='titleView'>{{item.title}}</view>
+        <view class='infoView_date'>{{item.remark}}</view>
+        <view class='infoView_person'>{{item.learn}}</view>
+        <view class='feeView'>{{item.fee}}</view>
+      </view>
+    </view>
+  </block>
+
+
 </block>
 
 <block wx:if="{{signle.length > 0}}">
@@ -56,5 +71,18 @@
       </view>
     </view>
   </view>
+
+
+  <block wx:for="{{signle}}" wx:key="*this">
+    <view class='r_itemView h_itemView' data-type='单课程' data-id='{{index}}' bindtap='tapdetail'>
+      <image class='collegeImg' mode='aspectFill' src='{{item.url}}'></image>
+      <view class='mgl10 textView'>
+        <view class='titleView'>{{item.title}}</view>
+        <view class='infoView_date'>{{item.remark}}</view>
+        <view class='infoView_person'>{{item.learn}}</view>
+        <view class='feeView'>{{item.fee}}</view>
+      </view>
+    </view>
+  </block>
 </block>
 

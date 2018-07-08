@@ -19,6 +19,8 @@ App({
       success: function (res) {
         _that.globalData.sreenheight = res.screenHeight;
         _that.globalData.screenwidth = res.screenWidth;
+        _that.globalData.windowHeight = res.windowHeight;
+        _that.globalData.windowWidth = res.windowWidth;
       },
     })
 
@@ -63,5 +65,7 @@ App({
     canvasHeight: 140,
     screenwidth:0,
     sreenheight:0,
+    windowWidth:0,
+    windowHeight:0
   }
 })

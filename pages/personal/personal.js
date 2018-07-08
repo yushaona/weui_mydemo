@@ -1,4 +1,5 @@
 // pages/personal/personal.js
+const app = getApp()
 Page({
 
   /**
@@ -13,6 +14,7 @@ Page({
     totalfee:"138.200.00",
     otherfee:"5.200.00",
     lastHeight:"",
+    bodyHeight:0,
     datalist:[
       // 每一块
       [
@@ -157,14 +159,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.setData({
+      "bodyHeight": app.globalData.windowHeight - 146
+    });
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    console.log(app.globalData.windowHeight);
+    console.log(app.globalData.windowWidth);
   },
 
   /**

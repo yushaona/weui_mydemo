@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/college/college",
+    "pages/college/signle",
+    "pages/college/series",
     "pages/index/index",
     "pages/personal/personal",
     "pages/logs/logs",
@@ -18,7 +20,7 @@
     "backgroundColorTop":"#f0f0f0",
     "backgroundColorBottom":"#f0f0f0",
     "enablePullDownRefresh":false,
-    "onReachBottomDistance": 50
+    "onReachBottomDistance": 0
   },
   "tabBar":{
     "color": "#cccccc",

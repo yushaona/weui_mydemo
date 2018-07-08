@@ -26,9 +26,10 @@
 </view>
 
 
+
 <!--列表信息  -->
-<view class='bodyView' >
-   <block wx:for="{{datalist}}" wx:for-item="itemName" wx:key="*this">
+<view class='bodyView' style='height:{{bodyHeight}}px;'>
+  <block wx:for="{{datalist}}" wx:for-item="itemName" wx:key="*this">
     <!-- 一个功能块  -->
     <view class='itemView bgcolor_default' >
       <block wx:for="{{itemName}}" wx:for-item="dataItem" wx:key="*this">
@@ -41,3 +42,5 @@
     </view>
   </block>
 </view>
+
+
