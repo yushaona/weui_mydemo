@@ -5,7 +5,87 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    arrowpic: "../../images/enter_arrow_default.png",
+    banner:[
+      {
+        "url":"http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg"
+      },
+      {
+        "url":"http://www.yake.net.cn/uploadfile/NewsAutoSave/20113/2011314101071.jpg"
+      },
+    ],
+    //课程预告
+    advance:[
+      {
+        "url":"http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg",
+        "title":"护士服务礼仪以及接诊流程",
+        "learn":2723,
+        "fee":"￥1,599.00",
+        "remark":"10y月18日 19:30 1天后"
+      },
+      {
+        "url": "http://www.yake.net.cn/uploadfile/NewsAutoSave/20113/2011314101071.jpg",
+        "title": "护士服务礼仪以及接诊流程",
+        "learn": 2723,
+        "fee": "￥1,599.00",
+        "remark": "10y月18日 19:30 1天后"
+      },
+      {
+        "url": "http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg",
+        "title": "护士服务礼仪以及接诊流程",
+        "learn": 2723,
+        "fee": "￥1,599.00",
+        "remark": "10y月18日 19:30 1天后"
+      }
+    ],
+    //系列课
+    series: [
+      {
+        "url": "http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg",
+        "title": "护士服务礼仪以及接诊流程",
+        "learn": 2723,
+        "fee": "￥1,599.00",
+        "remark": "10y月18日 19:30 1天后"
+      },
+      {
+        "url": "http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg",
+        "title": "护士服务礼仪以及接诊流程",
+        "learn": 2723,
+        "fee": "￥1,599.00",
+        "remark": "10y月18日 19:30 1天后"
+      },
+      {
+        "url": "http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg",
+        "title": "护士服务礼仪以及接诊流程",
+        "learn": 2723,
+        "fee": "￥1,599.00",
+        "remark": "10y月18日 19:30 1天后"
+      }
+    ],
+    //单课程
+    signle: [
+      {
+        "url": "http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg",
+        "title": "护士服务礼仪以及接诊流程",
+        "learn": 2723,
+        "fee": "￥1,599.00",
+        "remark": "10y月18日 19:30 1天后"
+      },
+      {
+        "url": "http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg",
+        "title": "护士服务礼仪以及接诊流程",
+        "learn": 2723,
+        "fee": "￥1,599.00",
+        "remark": "10y月18日 19:30 1天后"
+      },
+      {
+        "url": "http://pic2.ooopic.com/10/51/52/46b1OOOPIC63.jpg",
+        "title": "护士服务礼仪以及接诊流程",
+        "learn": 2723,
+        "fee": "￥1,599.00",
+        "remark": "10y月18日 19:30 1天后"
+      }
+    ],
   },
 
   /**

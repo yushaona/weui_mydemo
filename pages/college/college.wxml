@@ -1,2 +1,60 @@
 <!--pages/college/college.wxml-->
-<text>pages/college/college.wxml</text>
+<view class='swiperView'>
+   <swiper indicator-dots='true' indicator-color='rgba(255,255,255,0.6)' indicator-active-color='#ffffff' current='0' duration='500'>
+    <block wx:for="{{banner}}" >
+      <swiper-item >
+        <image class='swiperImage' mode='aspectFill' src="{{item.url}}"></image>
+      </swiper-item>
+    </block>
+   </swiper>
+</view>
+
+<block wx:if="{{advance.length > 0}}">
+  <view class='collegeView'>
+    <view class='itemView'> 
+      <view class='font12_5'>课程预告</view>
+      <view class='r_itemView'>
+        <view class='mgr7'>全部</view>
+        <image class='arrow' mode='aspectFill' src='{{arrowpic}}'></image>
+      </view>
+    </view>
+  </view>
+
+  <block wx:for="{{advance}}">
+    <view class='r_itemView h_itemView'>
+      <image class='collegeImg' mode='aspectFill' src='{{item.url}}'></image>
+      <view class='mgl10 textView'>
+        <view class='titleView'>{{item.title}}</view>
+        <view class='infoView'>{{item.remark}}</view>
+        <view class='infoView'>{{item.learn}}</view>
+        <view class='feeView'>{{item.fee}}</view>
+      </view>
+    </view>
+  </block>
+
+</block>
+
+<block wx:if="{{series.length > 0}}">
+   <view class='collegeView'>
+    <view class='itemView'> 
+      <view class='font12_5'>系列课</view>
+      <view class='r_itemView'>
+        <view class='mgr7'>全部</view>
+        <image class='arrow' mode='aspectFill' src='{{arrowpic}}'></image>
+      </view>
+    </view>
+  </view>
+</block>
+
+<block wx:if="{{signle.length > 0}}">
+   <view class='collegeView'>
+    <view class='itemView'> 
+      <view class='font12_5'>单课程</view>
+      <view class='r_itemView'>
+        <view class='mgr7'>全部</view>
+        <image class='arrow' mode='aspectFill' src='{{arrowpic}}'></image>
+      </view>
+    </view>
+  </view>
+</block>
+

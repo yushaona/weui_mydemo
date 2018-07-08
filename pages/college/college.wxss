@@ -1,1 +1,91 @@
 /* pages/college/college.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.swiperView{
+  height: 180px;
+  width: 100%;
+  position: relative;
+}
+swiper{
+  height: 100%;
+  width: 100%;
+  background-image:url("http://jfximage.oss-cn-qingdao.aliyuncs.com/default.png");
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+.swiperImage{
+  width: 100%;
+  height: 100%;
+}
+
+.arrow{
+  width: 5px;
+  height: 8px;
+}
+
+/* 课程预告 */
+.collegeView{
+  width: 100%;
+  margin-top: 9px;
+  background-color: #ffffff;
+}
+
+.itemView{
+  font-family: PingFang-SC-Medium;
+  font-size: 11px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 9.5px;
+  padding-right:9.5px; 
+}
+
+.r_itemView{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  background-color: #ffffff;
+}
+
+.h_itemView{
+  width: 100%;
+  height: 90px;
+}
+
+.textView{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  height: 100%;
+}
+
+.titleView{
+  font-family: PingFang-SC-Bold;
+  font-size: 13px;
+  color: rgb(51,51,51);
+}
+.infoView{
+  font-family: PingFang-SC-Medium;
+  font-size: 10px;
+  color: rgb(160,160,160);
+}
+.feeView{
+   font-family: PingFang-SC-Medium;
+  font-size: 12px;
+  color: rgb(255,73,73);
+}
+.collegeImg{
+  width: 141px;
+  height: 79px;
+}

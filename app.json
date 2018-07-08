@@ -1,12 +1,11 @@
 {
   "pages":[
+    "pages/college/college",
     "pages/index/index",
     "pages/personal/personal",
     "pages/logs/logs",
     "pages/marketing/marketing",
-    "pages/today/today",
-    "pages/college/college"
-    
+    "pages/today/today"
     
   ],
   "window":
@@ -40,7 +39,7 @@
         "selectedIconPath": "images/tabicon/btn_消息当前.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/college/college",
         "text": "学习吧",
         "iconPath": "images/tabicon/btn_商学院默认.png",
         "selectedIconPath": "images/tabicon/btn_商学院当前.png"
