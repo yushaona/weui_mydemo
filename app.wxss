@@ -10,6 +10,12 @@
 .mgt15{
   margin-top: 15px;
 }
+.mgl5{
+  margin-left: 5px;
+}
+.mgl8{
+  margin-left: 8px;
+}
 .mgl10{
   margin-left: 10px;
 }
@@ -18,6 +24,9 @@
 }
 .mgr7{
   margin-right: 7px;
+}
+.mgb10{
+  margin-bottom: 10px;
 }
 .bgcolor{
   background-color: rgba(27, 196, 182, 1);
@@ -28,14 +37,24 @@
 .greencolor{
   color: rgba(27, 196, 182, 1);
 }
+
 .graycolor{
   color: rgb(145,155,154);
 }
 .color51{
    color: rgb(51,51,51);
 }
+.color104{
+  color:rgb(104,104,104);
+}
 .whitecolor{
   color: #ffffff;
+}
+.yellowcolor{
+  color: rgb(241,165,50);
+}
+.font10{
+  font-size: 10px;
 }
 .font11{
   font-size: 11px;
@@ -43,8 +62,15 @@
 .font11_5{
   font-size: 11.5px;
 }
+.font12{
+  font-size: 12px;
+}
 .font12_5{
   font-size: 12.5px;
+}
+
+.font13{
+  font-size: 13px;
 }
 .font14{
   font-size: 14px;
@@ -52,6 +78,22 @@
 .font10{
   font-size: 10px;
 }
+.font18{
+  font-size: 18px;
+}
 .fontfamily{
   font-family: SourceHanSansCN-Light;
+}
+.fontfamily_bold{
+  font-family: SourceHanSansCN-Bold;
+}
+
+.fontfamily_medium{
+  font-family: PingFang-SC-Medium;
+}
+.fontfamily_cn_medium{
+  font-family: SourceHanSansCN-Medium;
+}
+.fontfamily_cn_normal{
+  font-family: SourceHanSansCN-Normal;
 }

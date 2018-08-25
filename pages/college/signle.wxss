@@ -1,0 +1,218 @@
+/* pages/college/signle.wxss */
+
+page{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.imageView{
+  width: 100%;
+  height: 180px;
+}
+.bannerimage{
+  width: 100%;
+  height: 100%;
+}
+
+.titleBG{
+  width: 100%;
+  background-color: #ffffff;
+  height: 102px;
+  box-sizing: border-box;
+}
+.titleView{
+  width: 100%;
+  height: 58px;
+  box-sizing: border-box;
+  padding-left: 9.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  border-bottom: 1px solid rgb(240,240,240);
+}
+
+.textView{
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.flagImage{
+  height: 4px;
+  width: 4px;
+}
+
+.learnView{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.teacherView{
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 9px;
+}
+
+
+.portraitView{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.portrait{
+  height: 28px;
+  width: 28px;
+}
+
+.followView{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.followimage{
+  height: 17px;
+  width: 18px;
+}
+
+.commentView{
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.livecomment{
+  width: 100%;
+  height: 36px;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.moreView{
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.moreCollege{
+  width: 100%;
+  height: 36px;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.itemView{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  background-color: #ffffff;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+}
+
+.textView_college{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  box-sizing: border-box; 
+  padding-left: 8px;
+}
+
+.titleView_college{
+  font-family: PingFang-SC-Bold;
+  font-size: 13px;
+  color: rgb(51,51,51);
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+.infoView_date{
+  margin-top: 7px;
+  font-family: PingFang-SC-Medium;
+  font-size: 10px;
+  color: rgb(160,160,160);
+}
+.infoView_person{
+  margin-top: 5px;
+  font-family: PingFang-SC-Medium;
+  font-size: 10px;
+  color: rgb(160,160,160);
+}
+
+.feeView{
+  margin-top: 5px;
+  font-family: PingFang-SC-Medium;
+  font-size: 12px;
+  color: rgb(255,73,73);
+}
+.collegeImg{
+  width: 100%;
+  height: 100%;
+}
+
+.collegeImgView{
+  width: 106px;
+  height: 60px;
+}
+
+.lineView{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.segmentView{
+  width: 100%;
+  height: 67px;
+}
+.buyView{
+  position: fixed;
+  height: 49px;
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  background-color:#ffffff;
+}
+
+.couponView{
+  height: 100%;
+  width: 40%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+.enterView{
+  height: 100%;
+  width: 60%;
+  background-color:#f86d5a;
+  align-items:center;
+  display:flex;
+  justify-content:center;
+  
+}
+.couponImg{
+  height: 14px;
+  width: 18px;
+}

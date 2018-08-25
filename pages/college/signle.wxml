@@ -1,0 +1,78 @@
+<!--pages/college/signle.wxml-->
+<!--课程banner  -->
+
+<view class='imageView'>
+  <image class='bannerimage' mode='aspectFill' src="{{bannerUrl}}"></image>
+</view>
+
+
+
+<!--  课程标题     -->
+<view class='titleBG' >
+  <view class='titleView'>
+
+    <view class='fontfamily_bold color51 font13 mgt15'>
+      <view class='textView'>{{title}}</view>
+    </view>
+
+    <view class='learnView fontfamily_medium font10 graycolor mgt6' >
+      <image class='flagImage' mode='aspectFill' src='{{flagimage.point_2.image}}'></image>
+      <text class='mgl5'>{{flagimage.point_2.info}}</text>
+      <text class='mgl8'>|</text>
+      <text class='mgl10'>{{learnnum}}次学习</text>
+    </view>
+  </view>
+
+  <view class='teacherView'>
+    <view class='portraitView'>
+      <image class='portrait' mode='aspectFill' src='{{portraitpic}}'></image>
+      <text class='mgl8 color51 font12 fontfamily_cn_normal'>{{anchorname}}</text>
+    </view>
+    <view class='followView'>
+      <image class='followimage mgr7' mode='aspectFill' src='{{follow.like.image}}'></image>
+      <text class='fontfamily font10 graycolor'>{{follow.like.info}}</text>
+    </view>
+  </view>
+</view>
+<!--课程介绍   -->
+
+<view class='commentView font11 fontfamily_cn_normal color104'>
+  <view class='font12 fontfamily_cn_medium color51 livecomment'>直播简介</view>
+  <view>{{comment}}</view>
+</view>
+
+
+<!--更多课程  -->
+
+<block wx:if="{{morecollege.length > 0}}">
+  <view class='moreView'>
+  <view class=' moreViewfont12 fontfamily_cn_medium color51 moreCollege'>更多课程</view>
+    <!--课程列表  -->
+    <block wx:for="{{morecollege}}">
+      <view class='itemView' data-type='课程预告' data-id='{{index}}' bindtap='tapdetail'>
+        <view class='collegeImgView'><image class='collegeImg'  mode='aspectFill' src='{{item.url}}'></image></view>
+          <view class='textView_college' style='width:{{titleWidth}}px;'>
+            <view class='titleView_college'>{{item.title}}</view>
+            <view class='infoView_date'>{{item.remark}}</view>
+            <view class='lineView'>
+              <view class='infoView_person'>{{item.learn}}</view>
+              <view class='feeView'>{{item.fee}}</view>
+            </view>
+          </view> 
+      </view>
+    </block>
+  </view>
+</block>
+<!--分割高度  -->
+<view class='segmentView'>
+</view>
+<view class='buyView'>
+  <view class='couponView font11 fontfamily_cn_normal yellowcolor'>
+    <image class='couponImg' mode='aspectFill' src='../../images/college/coupon.png'></image>
+    <text>优惠券</text>
+  </view>
+  <view class='enterView font18 fontfamily_cn_normal whitecolor'>
+    进入直播间
+  </view>
+</view>
+
